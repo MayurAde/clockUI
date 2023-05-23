@@ -1,0 +1,131 @@
+/* .clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    width: 2px;
+    height: 90px;
+    background-color: black;
+} */
+
+
+/* body{
+ 
+    background: linear-gradient(to right, #6953ba, #cf7342);
+} */
+
+
+
+.clock-area{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    display: flex;
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.651); */
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.analogClock{
+    position: relative;
+    background-color: rgb(29, 28, 28);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 15px 25px 5px  grey;
+    /* border: 5px solid black; */
+}
+
+.hand{
+    width: 150px;
+    height: 2px;
+    background-color: rgb(38, 0, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(30deg);
+    transform-origin: 0 0 ;
+}
+
+.twelve, .six, .three, .nine, .one, .two, .four, .five, .seven, .eight, .ten, .eleven{
+    position: absolute;
+        
+        font-size: 24px;
+}
+.twelve{
+    /* background-color: orange; */
+   
+    left: 144px;
+    top: 2%;
+    
+    
+}
+
+.one{
+    right: 72px;
+    top: 26px;
+}
+
+.two{
+    right: 26px;
+    top: 72px;
+}
+
+.three{
+    right: 6px;
+    top: 138px;
+}
+.four{
+    right: 26px;
+        bottom: 72px;
+}
+.five{
+right: 72px;
+    bottom: 26px;
+}
+
+.six{
+    left: 144px;
+        bottom: 2%;
+}
+
+.seven{
+    left:72px;
+    bottom:26px;
+}
+.eight{
+    left: 26px;
+        bottom: 72px;
+}
+
+.nine {
+    left: 6px;
+    top: 138px;
+}
+
+.ten{
+    left: 26px;
+        top: 72px;
+}
+
+.eleven{
+    left: 72px;
+        top: 26px;
+
+}
+
+.digitalClock{
+    color: black;
+    margin: 25px;
+    font-size: 36px;
+    font-weight: 500px;
+}
