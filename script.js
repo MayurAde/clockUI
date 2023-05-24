@@ -1,3 +1,5 @@
+let currMode = "light";
+
 const dispNum = (num) => {
   if (Number(num) < 10) {
     return "0" + String(num);
@@ -23,3 +25,23 @@ const changeTime = () => {
 };
 
 setInterval(changeTime, 1000);
+
+document.querySelector(".mode").addEventListener("click", () => {
+  if (currMode === "light") {
+    document.querySelector("body").style.backgroundColor = " rgb(26, 23, 23)";
+    document.querySelector(".digitalClock").style.color = "white";
+    // document.querySelector(".analogClock").style.boxShadow =
+    //   "5px 5px 15px  black";
+
+    document.querySelector(".fas").classList.toggle("hide");
+    document.querySelector(".fad").classList.toggle("hide");
+    currMode = "dark";
+  } else {
+    document.querySelector("body").style.backgroundColor = "white";
+    document.querySelector(".digitalClock").style.color = "black";
+    console.log("else");
+    document.querySelector(".fas").classList.toggle("hide");
+    document.querySelector(".fad").classList.toggle("hide");
+    currMode = "light";
+  }
+});
