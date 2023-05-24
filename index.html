@@ -15,6 +15,9 @@
     <section   class="clock-area">
         <div class="analogClock">
             <div class="hand"></div>
+            <div class="hourHand"></div>
+            <div class="minutesHand"></div>
+            <div class="handBase"></div>
             <div class="twelve">12</div>
             <div class="one">1</div>
             <div class="two">2</div>
@@ -34,7 +37,7 @@
                 <span class="minutes">00</span> :
                 <span class="seconds">00</span>
             </h1>
-            <h3 class="date"></h3>
+            <div><h5 class="date"></h5></div>
             <div class="mode">
          
             <i class="fad fa-moon" style="--fa-secondary-opacity: 1;"></i>
@@ -46,4 +49,9 @@
     </section>
 </body>
 <script src="script.js"></script>
+
+<script>
+    const date = new Date();
+    document.querySelector(".date").textContent =  date.toDateString();
+</script>
 </html>

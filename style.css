@@ -24,18 +24,56 @@
     /* border: 5px solid black; */
 }
 
-
-.hand{
-    width: 150px;
-    height: 2px;
-    background-color: rgb(38, 0, 255);
+.hourHand{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-origin: 0 0 ;
+    width: 90px;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    top: 148px;
+    left:150px;
+    transform-origin: 0 0;
+        transform: rotate(90deg);
+}
+
+.minutesHand{
+    position: absolute;
+        width: 120px;
+        height: 4px;
+        background-color: black;
+        border-radius: 2px;
+        top: 148px;
+        left: 152px;
+        transform-origin: 0 0;
+        transform: rotate(90deg);
+}
+
+.handBase, .hand{
+    background-color: rgb(78, 5, 78);
+}
+.hand{
+    width: 175px;
+    height: 2px;
+
+    position: absolute;
+    top: 149px;
+    left: 125px;
+    transform-origin: 25px 0 ;
     z-index: 155;
     /* box-shadow: 5px 15px 15px white; */
 }
+
+.handBase{
+    width: 14px;
+    height: 14px;
+   
+    position: absolute;
+    top: 143px;
+    left: 143px;
+    border-radius: 50%;
+
+}
+
 
 .fad, .fas{
     color: rgb(5, 39, 112);
@@ -134,4 +172,11 @@ right: 75px;
     border-radius: 50%;
     /* box-shadow: 5px 2px 2px black; */
     cursor: pointer;
+}
+
+
+.date{
+    font-size: 24px;
+    text-align: center;
+    color:rgb(65, 62, 62);
 }
