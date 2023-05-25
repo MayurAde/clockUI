@@ -17,8 +17,8 @@
     position: relative;
     background-color: rgb(29, 28, 28);
     background: linear-gradient(to right, #6953ba, #cf7342);
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
     border-radius: 50%;
     box-shadow: 5px 5px 15px  black;
     /* border: 5px solid black; */
@@ -32,8 +32,8 @@
     border-radius: 2px;
     top: 148px;
     left:150px;
-    transform-origin: 0 0;
-        transform: rotate(90deg);
+    transform-origin: 0 2px;
+        transform: rotate(180deg);
 }
 
 .minutesHand{
@@ -42,9 +42,9 @@
         height: 4px;
         background-color: black;
         border-radius: 2px;
-        top: 148px;
-        left: 152px;
-        transform-origin: 0 0;
+    top: 148px;
+        left: 150px;
+        transform-origin: 0 2px;
         transform: rotate(90deg);
 }
 
@@ -56,10 +56,11 @@
     height: 2px;
 
     position: absolute;
-    top: 149px;
+    top: 150px;
     left: 125px;
-    transform-origin: 25px 0 ;
+    transform-origin: 25px 1px ;
     z-index: 155;
+    transform: rotate(270deg);
     /* box-shadow: 5px 15px 15px white; */
 }
 
@@ -90,14 +91,14 @@
 .twelve{
     /* background-color: orange; */
    
-    left: 144px;
+    left: 138px;
     top: 2%;
     
     
 }
 
 .one{
-    right: 75px;
+    right: 78px;
     top: 26px;
 }
 
@@ -112,11 +113,11 @@
 }
 .four{
     right: 26px;
-        bottom: 72px;
+        bottom: 70px;
 }
 .five{
-right: 75px;
-    bottom: 26px;
+right: 78px;
+    bottom: 25px;
 }
 
 .six{
@@ -125,8 +126,8 @@ right: 75px;
 }
 
 .seven{
-    left:75px;
-    bottom:26px;
+    left:78px;
+    bottom:24px;
 }
 .eight{
     left: 26px;
@@ -152,7 +153,7 @@ right: 75px;
 .digitalClock{
     color: black;
     margin: 25px;
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: 500px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -180,3 +181,5 @@ right: 75px;
     text-align: center;
     color:rgb(65, 62, 62);
 }
+
+

@@ -47,7 +47,6 @@ document.querySelector(".mode").addEventListener("click", () => {
   } else {
     document.querySelector("body").style.backgroundColor = "white";
     document.querySelector(".digitalClock").style.color = "black";
-    console.log("else");
     document.querySelector(".fas").classList.toggle("hide");
     document.querySelector(".fad").classList.toggle("hide");
     currMode = "light";
